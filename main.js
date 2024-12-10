@@ -12,7 +12,8 @@
             console.log(conurtyDetails);
             const displayData= conurtyDetails[0]
             console.log(displayData);
-            result.innerHTML=`
+            result.innerHTML=
+            `
               <div class="row border bg-light rounded-2  p-3 align-items-center  ">
                             <div class="col-lg-6 mb-3">
                                 <h3 class="text-primary">
@@ -32,9 +33,9 @@
                                 <li class="list-group-item">Time Zone :
                                     ${displayData.timezones} </li>
                                 <li class="list-group-item">Continent : 
-                                    ${displayData.Asia}</li>
+                                    ${displayData.region}</li>
                                 <li class="list-group-item">Languages :
-                                   ${Object.values[displayData.languages]}  </li>
+                                   ${Object.values(displayData.languages) }  </li>
                                 <li class="list-group-item">Currencies :
                                     ${displayData.currencies[Object.keys(displayData.currencies)[0]].symbol}
                                       ${displayData.currencies[Object.keys  (displayData.currencies)[0]].name
